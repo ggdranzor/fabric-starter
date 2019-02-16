@@ -1,3 +1,8 @@
+# Modified for 2 Physical Machines
+## Machine 1: Org A and Orderer
+## Machine 2: Org B and Org C
+ Just change the IP Addresses in network.sh of Org A, B, C and Orderer accordingly in two serperate files for each machines.
+
 # Starter Application for Hyperledger Fabric 1.4
 
 Create a network to jump start development of your decentralized application.
