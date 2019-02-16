@@ -3,17 +3,17 @@
 ## Machine 2: Org B and Org C
  Just change the IP Addresses in network.sh of Org A, B, C and Orderer accordingly in two serperate files for each machines.
  
-#Steps to Run the multi node network Run in the same order Optimised for these ports only 
-./network.sh -m generate-peer -o a -a 4000 -w 8081 -c 7054 -0 7051 -1 7053 -2 7056 -3 7058  (machine1)
-./network.sh -m generate-peer -o b -a 4001 -w 8082 -c 8054 -0 8051 -1 8053 -2 8056 -3 8058  (machine2)
-./network.sh -m generate-peer -o c -a 4002 -w 8083 -c 9054 -0 9051 -1 9053 -2 9056 -3 9058  (machine2)
+# Steps to Run the multi node network (same order only & fixed for these ports only 
+- ./network.sh -m generate-peer -o a -a 4000 -w 8081 -c 7054 -0 7051 -1 7053 -2 7056 -3 7058  (machine1)
+- ./network.sh -m generate-peer -o b -a 4001 -w 8082 -c 8054 -0 8051 -1 8053 -2 8056 -3 8058  (machine2)
+- ./network.sh -m generate-peer -o c -a 4002 -w 8083 -c 9054 -0 9051 -1 9053 -2 9056 -3 9058  (machine2)
 
-./network.sh -m generate-orderer    (machine1)
+- ./network.sh -m generate-orderer    (machine1)
 ./network.sh -m up-orderer          (machine1)
 
-./network.sh -m up-1      (machine1)
-./network.sh -m up-2      (machine2)
-./network.sh -m up-3      (machine2)
+- ./network.sh -m up-1      (machine1)
+- ./network.sh -m up-2      (machine2)
+- ./network.sh -m up-3      (machine2)
 
 
 # Starter Application for Hyperledger Fabric 1.4
